@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/********** HEADER **********/
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo{
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    color: rgb(38, 39, 44);
+    margin: 30px;
+    padding-left: 100px;
+}
+
+ul li, a{
+    margin: 30px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: rgb(38, 39, 44);
+}
+
+/********** Body **********/
+
+body{
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+/********** Section Intro **********/
+
+
+#section_intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 0 ;
+    margin-bottom: 30px;
+}
+
+h1.title_section_intro{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #002bff;
+    margin-left: 50px;
+    
+}
+
+p.text_section_intro{
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #282828;
+    margin-left: 50px;
+    margin-bottom: 0 15px;
+    display: inline-block;
+}
+
+.imagen_principal{
+    max-width: 600px;
+    margin: 0% 8%;
+    border:2px solid #fff;
+    display: block;
+}
+
+/********** Section two **********/
+
+.section_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    margin-top: 30px;
+    padding: 0px 160px;
+}
+
+.info_section_two{
+    margin-bottom: 50px 50px;
+    padding-left: 160px;
+}
+
+.chico_rombo{
+    max-width: 500px;
+}
+
+h2.tittle_section_two{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #002bff;
+    justify-content: center;
+}
+
+p.text_section_two{
+    font-size: 21px;
+    color: #282828;
+    display: inline-block;
+}
+
+
+/********** Section three **********/
+
+
+.main_container{
+    padding: 100px 100px;
+}
+
+h2.title_main_container{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #002bff;
+    text-align: center;
+    justify-content: center;
+}
+
+.first_container_text_left{
+    padding: 50px;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+h3.title_container{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #002bff;
+}
+
+p.text_container{
+    
+}
+
+.first_container_img_right{
+    margin: 0% 8%;
+    border:2px solid #fff;
+    display: block;
+}
