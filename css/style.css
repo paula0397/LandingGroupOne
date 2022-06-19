@@ -115,9 +115,18 @@ p.text_section_two{
 
 /********** Section three **********/
 
+#container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
 
 .main_container{
-    padding: 100px 100px;
+    align-items: center;
+    padding: 10px 100px 0 ;
+    margin-bottom: 30px;
+    
 }
 
 h2.title_main_container{
@@ -129,24 +138,24 @@ h2.title_main_container{
 }
 
 .first_container_text_left{
-    padding: 50px;
+    display: flex;
     align-items: center;
-    
-    justify-content: space-between;
 }
 
-h3.title_container{
+.title_container{
     font-size: 30px;
     margin-bottom: 20px;
     color: #002bff;
 }
 
-p.text_container{
+.title_container span{
+    font-size: 18px;
+    color: #282828;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: normal;
     
 }
 
-.first_container_img_right{
-    margin: 0% 8%;
-    border:2px solid #fff;
-    display: block;
-}
+
+
