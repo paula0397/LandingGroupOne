@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 /********** HEADER **********/
@@ -79,7 +80,7 @@ p.text_section_intro{
     display: block;
 }
 
-/********** Section two **********/
+/********** Second section **********/
 
 .section_two{
     display: flex;
@@ -113,7 +114,7 @@ p.text_section_two{
 }
 
 
-/********** Section three **********/
+/********** Third section **********/
 
 #container{
     display: flex;
@@ -192,6 +193,8 @@ h2.title_main_container{
 
 }
 
+/********** Fourth section **********/
+
 
 .last_section{
     padding: 30px 407px ;
@@ -209,5 +212,75 @@ h2.title_main_container{
     font-size: 25px;
     margin-bottom: 20px;
     color: #002bff;  
+}
+
+
+/********** Form **********/
+
+#contact_us{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+
+}
+
+h2.title{
+    color: #002bff;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: #f7f8f9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gainsboro ;
+}
+
+.input{
+    background: white;
+    border: 0;
+    outline: none;
+    border: 1px solid gray;
+    padding: 20px 50px;
+}
+
+.input::placeholder{
+    color: #7082a2;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"]{
+	width:400px;
+	padding:20px 20px;
+	border:1px solid #f6f6f6;
+	border-radius:5px;
+	background-color:#ffffff;
+	margin:8px 0;
+	display:inline-block;
+}
+
+
+form input[type="submit"]{
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid ;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#002bff;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+    background: black ;
 }
 
