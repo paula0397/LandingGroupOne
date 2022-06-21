@@ -221,7 +221,7 @@ h2.title_main_container{
     font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 30px 30px;
+    padding: 10px 30px 50px;
 
 }
 
@@ -284,3 +284,14 @@ form input[type="submit"]:hover{
     background: black ;
 }
 
+/********** Footer **********/
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: #efefef;
+    color: #002bff;
+    font-size: 20px;
+}
