@@ -118,7 +118,8 @@ p.text_section_two{
 #container{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 180px ;
+    
 }
 
 
@@ -137,25 +138,76 @@ h2.title_main_container{
     justify-content: center;
 }
 
+.imagen1{
+    max-width: 500px;
+    margin-top: 50px;
+}
+
 .first_container_text_left{
     display: flex;
     align-items: center;
 }
 
-.title_container{
+.first_text_container{
     font-size: 30px;
     margin-bottom: 20px;
     color: #002bff;
+    
 }
 
-.title_container span{
-    font-size: 18px;
+.first_text_container span{
+    font-size: 21px;
     color: #282828;
     text-decoration: none;
     font-weight: normal;
     line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 120px;
     
 }
 
 
+.imagen2{
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.second_text_container{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #002bff;
+    margin-left: 100px;
+    
+}
+
+.second_text_container span{
+    font-size: 21px;
+    color: #282828;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.last_section{
+    padding: 30px 407px ;
+    
+}
+
+.section_four{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.section_fifth {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #002bff;  
+}
 
