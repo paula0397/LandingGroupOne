@@ -2,20 +2,16 @@
     margin: 0 auto;
     padding: 0;
     box-sizing:border-box ;
+    font-family: 'Lato', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
-    
 }
 
-/********** Body **********/
-
-body{
-    width: 100%;
-    background-repeat: no-repeat, no-repeat;
-    font-family: 'Lato', sans-serif;
-    margin: 0px;
+.content-header, .main, .container, .section_four, .section_two_info{
+    width: 1500px;
+    margin: auto;
 }
 
 /********** HEADER **********/
@@ -23,131 +19,152 @@ body{
 header{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .logo{
-    width: 300px;
-    margin-left: 50px;
+    width: 22%;
+    margin-left: 1px;
 }
 
 nav ul{
     display: flex;
     list-style: none;
-    color: rgb(38, 39, 44);
-    margin: 30px;
-    padding-left: 100px;
 }
 
-ul li, a{
-    margin: 30px;
-    padding-left: 50px;
+nav ul li{
+    margin: 0 50px;
+}
+nav ul li a{
     text-decoration: none;
-    color: rgb(38, 39, 44);
+    color: #282828;
 }
+    /* ------ Animation linea footer link ------*/
+    .nav a {
+        background-size: 0% 2px;
+    }
+    .nav a:hover {
+        background-image: linear-gradient(#002bff, #002bff);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 100% 3px;
+        transition: 0.5s;
+    }
 
+/* ------ Manage Header ------*/
 
-
-.list_nav a{
-    text-decoration: none;
-    color:#282828 ;
-}
-
-.list_nav a:hover{
-    text-decoration: none;
-    color:#002bff;
-}
-
-
-/********** Section Intro **********/
-
-
-#section_intro{
+.content-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 100px 0 ;
-    margin-bottom: 30px;
+    padding: 30px 0;
+    margin: auto;
 }
 
-h1.title_section_intro{
-    font-size: 60px;
+/* ------ Section Intro ------*/
+
+.section_intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 129px;
+    flex-wrap: wrap;
+    margin: 0 80px 0 0;
+}
+
+.section_intro h1{
     color: #002bff;
-    margin: 20px 50px;
+    font-size: 58px;
+    margin-bottom: 28px;
 }
 
-p.text_section_intro{
-    font-size: 23px;
+.section_intro_text{
+    width: 60%;
+}
+
+.section_intro p{
+    font-size: 21px;
     color: #282828;
-    margin: 30px 50px;
-    display: inline-block;
 }
 
-.imagen_principal{
-    max-width: 600px;
-    margin: 0% 8%;
-    display: block;
+.img_intro{
+    width: 40%;
 }
 
-/********** Second section **********/
+.img_intro img{
+    width: 100%;
+}
+
+/********** Section two **********/
 
 .section_two{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #efefef;
-    margin-top: 30px;
-    padding: 30px 160px 0;
+    margin-top: 40px;
 }
 
-.info_section_two{
-    margin-bottom: 50px;
-    padding-left: 160px;
+.section_two_info{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .chico_rombo{
-    width: 500px;
+    width: 30%;
+    
 }
 
-h2.tittle_section_two{
+.chico_rombo img{
+    width: 100%;
+}
+
+.info_section_two h2{
     font-size: 50px;
-    margin-bottom: 20px;
     color: #002bff;
     justify-content: center;
+    margin: 0 100px 0 50px;
 }
 
-p.text_section_two{
+.info_section_two p{
     font-size: 21px;
     color: #282828;
     display: inline-block;
+    margin: 0 100px 10px 50px;
 }
 
-
-/********** Third section **********/
-
-#container{
-    display: flex;
-    justify-content: center;
-    padding: 50px 180px ;
-}
+/********** Section three **********/
 
 .main_container{
-    align-items: center;
-    padding: 10px 100px 0 ;
-    margin-bottom: 30px;
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-h2.title_main_container{
-    font-size: 40px;
-    margin-bottom: 60px;
+.title_main_container{
+    font-size: 30px;
+    color: #002bff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.title_main_container h2{
+    font-size: 24px;
     color: #002bff;
     text-align: center;
     justify-content: center;
 }
 
 .imagen1{
-    max-width: 500px;
-    margin-top: 50px;
+    width: 33%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.imagen1 img{
+width: 100%;
 }
 
 .first_container_text_left{
@@ -174,10 +191,14 @@ h2.title_main_container{
     
 }
 
-
 .imagen2{
-    margin-top: 50px;
-    max-width: 500px;
+    width: 35%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.imagen2 img{
+width: 100%;
 }
 
 .second_text_container{
@@ -185,7 +206,6 @@ h2.title_main_container{
     margin-bottom: 20px;
     color: #002bff;
     margin-left: 100px;
-    
 }
 
 .second_text_container span{
@@ -196,39 +216,33 @@ h2.title_main_container{
     line-height: normal;
     display: flex;
     flex-wrap: wrap;
-
 }
 
-/********** Fourth section **********/
-
-
-.last_section{
-    padding: 30px 407px ;
-    
-}
+/********** Section four **********/
 
 .section_four{
+    display: flex;
+    align-items: center;
     text-align: center;
-    font-size: 25px;
-
 }
 
-.section_fifth {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: #002bff;  
+.section_four_text p{
+    width: 70%;
+    font-size: 23px;
 }
 
+.two{
+    color: #002bff;
+}
 
 /********** Form **********/
 
+
 #contact_us{
+    margin: 50px;
     font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 10px 30px 50px;
-
 }
 
 h2.title{
@@ -238,7 +252,7 @@ h2.title{
 }
 
 .form{
-    width: 900px;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -290,6 +304,7 @@ form input[type="submit"]:hover{
     background: black ;
 }
 
+
 /********** Footer **********/
 
 
@@ -303,171 +318,726 @@ form input[type="submit"]:hover{
 }
 
 
+/* **************************************** Laptop ****************************************/
+@media (min-width: 1024px) and (max-width: 1280px){
+    .content-header, .main, .container, .section_four, .section_two_info{
+        width: 90%;
+    }
 
-/********** RESPONSIVE **********/
+    body p{
+        font-size: 17;
+    }
 
+    .section_intro h1{
+        margin-top: 50px;
+        font-size: 40px;
+    }
 
-@media (max-width: 320px) {
+    .section_intro p{
+        font-size: 17px;
+        color: #282828;
+        margin-bottom: 50px;
+    }
 
-    /********** HEADER **********/
+/********** Section two **********/
 
-header{
-    width: 320vw;
-    align-items: center;
-    margin-bottom: 10px;
-    flex-direction: column;
+.chico_rombo{
+    width: 40%;
 }
 
-.logo{
-    margin: 0 auto;
+.chico_rombo img{
+    width: 100%;
 }
 
-nav{
-    width: 320vw;
+.info_section_two h2{
+    font-size: 30px;
 }
 
-nav ul{
-    margin: 0;
-    padding-left: 0;
-    justify-content: space-around;
+.info_section_two p{
+    font-size: 17px;
 }
 
-ul li, a{
-    margin: 30px 0;
-    padding-left: 0;
+/********** Section three **********/
+
+.main_container{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-
-.list_nav a{
-    font-size: 20px ;
+.title_main_container{
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
-
-/********** Section Intro **********/
-
-
-#section_intro{
-    width: 320vw;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-h1.title_section_intro{
-    font-size: 50px;
+.title_main_container h2{
+    font-size: 20px;
+    color: #002bff;
     text-align: center;
-
+    justify-content: center;
 }
 
-p.text_section_intro{
-    font-size: 21px;
-    text-align: center;
-
+.imagen1{
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 50px;
 }
 
-.imagen_principal{
-    margin: 0;
-
-}
-
-/********** Second section **********/
-
-.section_two{
-    width: 320vw;
-    flex-direction: column-reverse;
-    margin-top: 30px;
-    padding: 50px 150px 0 150px;
-    text-align: center;
-}
-
-.info_section_two{
-    margin-bottom: 20px;
-    padding-left: 0;
-}
-
-
-/********** Third section **********/
-
-#container{
-    width: 320vw;
-    padding: 50px 50px ;
+.imagen1 img{
+width: 100%;
 }
 
 .first_container_text_left{
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-.first_container_text_left:nth-child(2n){
-    flex-direction: column-reverse;
-}
-
-.first_text_container span{
-    margin-right: 0;
+    display: flex;
+    align-items: center;
 }
 
 .first_text_container{
-    margin-left: 0;
-    padding-top: 20px;
-}
-
-.second_text_container{
-    margin-left: 0;
-    padding-top: 20px;
-}
-
-
-/********** Fourth section **********/
-
-
-.last_section{
-    padding: 0 80px 50px;
-    width: 320vw;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #002bff;
     
 }
 
+.first_text_container span{
+    font-size: 17px;
+    margin-right: 50px;
+}
 
+.imagen2{
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+
+.imagen2 img{
+width: 100%;
+}
+
+.second_text_container{
+    font-size: 30px;
+}
+
+.second_text_container span{
+    font-size: 17px;
+}
+
+}
+
+
+@media (max-width: 800px){
+
+    .content-header, .main, .container, .section_four, .section_two_info{
+        width: 80%;
+    }
+
+    nav ul{
+        font-size: 12px;
+    }
+
+    nav ul li{
+        margin: 0 30px;
+    }
+
+    .section_intro h1{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .section_intro p{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .img_intro{
+        width: 40%;
+    }
+
+    /********** Section two **********/
+
+.section_two_info{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.info_section_two{
+    margin: 0 30px 0;
+}
+
+.info_section_two h2{
+    font-size: 18px;
+    margin: 0;
+}
+
+.info_section_two p{
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+/********** Section three **********/
+
+.main_container{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.title_main_container{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imagen1{
+    width: 45%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_text_container{
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.first_text_container span{
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+.imagen2{
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.second_text_container{
+    margin: 0 20px;
+    
+    align-items: center;
+    font-size: 18px;
+}
+
+.second_text_container span{
+    align-items: center;
+    font-size: 13px;
+}
+
+.section_four{
+    width: 100%;
+}
+
+.section_four_text p{
+    font-size: 15px;
+}
+
+.footer{
+    font-size: 15px;
+}
+}
+
+@media (max-width: 767px){
+
+    .content-header, .main, .container, .section_four, .section_two_info{
+        width: 90%;
+    }
+
+    nav ul{
+        font-size: 12px;
+    }
+
+    nav ul li{
+        margin: 0 20px;
+    }
+
+    .section_intro h1{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .section_intro p{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .img_intro{
+        width: 40%;
+    }
+
+    /********** Section two **********/
+
+.section_two_info{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.info_section_two{
+    margin: 0 30px 0;
+}
+
+.info_section_two h2{
+    font-size: 18px;
+    margin: 0;
+}
+
+.info_section_two p{
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+/********** Section three **********/
+
+.main_container{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.title_main_container{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imagen1{
+    width: 45%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_text_container{
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.first_text_container span{
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+.imagen2{
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.second_text_container{
+    margin: 0 20px;
+    
+    align-items: center;
+    font-size: 18px;
+}
+
+.second_text_container span{
+    align-items: center;
+    font-size: 13px;
+}
+
+
+.section_four{
+    width: 100%;
+}
+
+.section_four_text p{
+    font-size: 15px;
+}
+
+.footer{
+    font-size: 15px;
+}
+}
+
+@media (max-width: 575px){
+
+    .content-header, .main, .container, .section_four, .section_two_info{
+        width: 80%;
+    }
+
+    /********** section Intro **********/
+
+.section_intro{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section_intro h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.section_intro_text{
+    width: 100%;
+}
+
+.section_intro p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.img_intro{
+    width: 70%;
+}
+
+/********** Section two **********/
+
+.section_two{
+    margin-top: 5px;
+}
+
+.section_two_info{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chico_rombo{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.info_section_two h2{
+    font-size: 25px;
+    margin: 0;
+}
+
+.info_section_two p{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+}
+
+/********** Section three **********/
+
+.main_container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.title_main_container{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.title_main_container h2{
+    font-size: 16px;
+}
+
+.first_text_container{
+    font-size: 14px;
+    margin: 0;
+}
+
+.imagen1{
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 2px;
+}
+
+.first_container_text_left:nth-child(2n){
+    flex-direction: column;
+}
+
+.first_container_text_left{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.first_text_container span{
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.imagen2{
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 2px;
+}
+
+.second_text_container{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.second_text_container span{
+    font-size: 12px;
+}
+
+/********** Section four **********/
+
+.section_four{
+    width: 100%;
+}
+
+.section_four_text p{
+    font-size: 13px;
+}
 
 /********** Form **********/
 
 #contact_us{
-    width: 320vw;
-}
-
-h2.title{
-    font-size: 35px;
-}
+    width: 70%;
+    margin: 0;
+    margin-top: 15px;
+} 
 
 .form{
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 20px;
+    
 }
-
 
 form input[type="text"],
 form input[type="email"],
 form input[type="number"]{
-	width:90%;
-	padding:30px 30px;
+    font-size: 12px;
+}
+}
+
+/* *********************************************+  Mobile ****************************************/
+/* **************************************** Iphone 8, 7, 6S, 6****************************************/
+
+@media (max-width: 375px){
+    .main, .container, .section_four, .section_two_info{
+        width: 70%;
+    }
+
+    body p{
+        font-size: 12px;
+        color: #282828;
+    }
+
+/********** HEADER **********/
+
+
+.content-header{
+    flex-direction: column;
+}
+
+.logo{
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    justify-content: space-around;
+}
+
+.list_nav a{
+    font-size: 12px ;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0 30px;
+}
+
+/********** section Intro **********/
+
+.section_intro{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section_intro h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.section_intro_text{
+    width: 100%;
+}
+
+.section_intro p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.img_intro{
+    width: 90%;
+}
+
+/********** Section two **********/
+
+.section_two{
+    margin-top: 5px;
+}
+
+.section_two_info{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chico_rombo{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.info_section_two h2{
+    font-size: 25px;
+    margin: 0;
+}
+
+.info_section_two p{
+    font-size: 12px;
+    display: inline-block;
+    margin: 0;
 }
 
 
-form input[type="submit"]{
-	padding:20px 40px;
-    font-size: 21px;
+/********** Section three **********/
+
+.main_container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.title_main_container{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.title_main_container h2{
+    font-size: 16px;
+}
+
+.first_text_container{
+    font-size: 15px;
+    margin: 0;
+}
+
+.imagen1{
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 2px;
+}
+
+.first_container_text_left:nth-child(2n){
+    flex-direction: column;
+}
+
+.first_container_text_left{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.first_text_container span{
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.imagen2{
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 2px;
+}
+
+.second_text_container{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.second_text_container span{
+    font-size: 12px;
+}
+
+/********** Section four **********/
+
+.section_four{
+    width: 100%;
+}
+
+.section_four_text p{
+    font-size: 13px;
+}
+
+/********** Form **********/
+
+#contact_us{
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
 } 
 
-.input::placeholder{
-    font-size: 21px;
+.form{
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 20px;
+    
 }
 
-.footer{
-    width: 320vw;
-    padding: 20px;
-    font-size: 21px;
-    background-color: #282828;
-    color: #ffffff;
+form input[type="text"],
+form input[type="email"],
+form input[type="number"]{
+    font-size: 12px;
+}
+
+
+/* **************************************** Iphone 5/SE ****************************************/
+@media (max-width: 320px){
+
+    nav ul li{
+        margin: 0 15px;
+    }
+
+    /********** Section three **********/
+
+    .main_container{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title_main_container{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .title_main_container h2{
+        font-size: 12px;
+    }
+
+    /********** Section four **********/
+
+    .section_four{
+        width: 100%;
+    }
+
+    .section_four_text p{
+        font-size: 12px;
+    }
+
 }
 
 }
