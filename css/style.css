@@ -278,7 +278,9 @@ h2.title{
 
 form input[type="text"],
 form input[type="email"],
-form input[type="number"]{
+form input[type="number"],
+select[name="states"]{
+    color: #7082a2;
 	width:400px;
 	padding:20px 20px;
 	border:1px solid #f6f6f6;
@@ -286,6 +288,7 @@ form input[type="number"]{
 	background-color:#ffffff;
 	margin:8px 0;
 	display:inline-block;
+    
 }
 
 
